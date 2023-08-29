@@ -176,7 +176,12 @@ body {
   line-height: 1.5;
   letter-spacing: 0.64px;
   border: none;
+  cursor: pointer;
   box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.15);
+}
+.front-button:hover {
+  background-color: var(--ocean);
+  transition: var(--transition);
 }
 .header-flex {
   display: flex;
@@ -356,6 +361,38 @@ body {
   margin: 96px 0 72px 0;
   justify-content: center;
 }
+
+.button {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid var(--cornflower);
+  background: var(--cloud);
+
+  color: var(--iris);
+  text-align: center;
+
+  /* Button Text */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+}
+
+.button:active,
+.button:hover,
+.button:focus {
+  border-radius: 4px;
+  border-color: var(--ocean);
+  background: var(--iris);
+  color: var(--cloud);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+}
 .portfolio-list {
   display: grid;
   align-items: center;
@@ -504,47 +541,65 @@ body {
   align-items: center;
   fill: var(--white);
 }
-
-/* buttons */
-.front-button {
-  cursor: pointer;
-}
-.front-button:hover {
-  background-color: var(--ocean);
-  transition: var(--transition);
+.newsletter {
+  margin-left: 80px;
 }
 
-.button {
-  display: flex;
-  padding: 12px 24px;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  border-radius: 4px;
-  border: 1px solid var(--cornflower);
-  background: var(--cloud);
-
-  color: var(--iris);
-  text-align: center;
-
-  /* Button Text */
+.newsletter-txt {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.32px;
+  margin-bottom: 16px;
+  color: var(--white);
 }
 
-.button:active,
-.button:hover,
-.button:focus {
+.newsletter-email {
+  width: 264px;
+  height: 40px;
   border-radius: 4px;
-  border-color: var(--ocean);
-  background: var(--iris);
-  color: var(--cloud);
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--white);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: var(--navyblue);
+  margin-right: 24px;
+}
+.newsletter-form input:focus {
+  outline: none;
+  border: 1px solid var(--ocean);
+  box-shadow: 0px 4px 4px 0px rgba(256, 256, 256, 0.15);
+}
+.newsletter input {
+  padding: 8px 16px;
+  color: var(--white);
+}
+.newsletter-form {
+  display: flex;
+}
+.subscribe-button {
+  width: 165px;
+  height: 40px;
+  border-style: none;
+  border-radius: 4px;
+  display: inline-flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background-color: var(--iris);
+  font-family: "Roboto", sans-serif;
+  color: var(--white);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  cursor: pointer;
   transition: var(--transition);
 }
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: #404bbf;
+}
+
 /* modal */
 
 .backdrop {
