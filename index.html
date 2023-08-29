@@ -441,7 +441,7 @@
             />
             <button class="subscribe-button" type="submit">
               Subscribe
-              <svg class="subscribe-button-icon">
+              <svg width="24" height="24">
                 <use href="./images/icons.svg#icon-Frame-3"></use>
               </svg>
             </button>
@@ -456,6 +456,58 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="order-form-name">
+          Leave your contacts and we will call you back
+        </p>
+        <label for="user-name" class="form-label">Name</label>
+        <div class="order-position">
+          <svg width="18px" height="18px" class="order-form-icon">
+            <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+          </svg>
+          <input
+            id="user-name"
+            name="user-name"
+            class="order-input"
+            pattern="^[A-Za-z\s\-']{1,50}$"
+            required
+          />
+        </div>
+        <label class="form-label">Phone</label>
+        <div class="order-position">
+          <svg width="18px" height="24px" class="order-form-icon">
+            <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+          </svg>
+          <input
+            type="number"
+            name="phone_number"
+            id="user-phone"
+            class="order-input"
+            required
+          />
+        </div>
+        <label class="form-label">Email</label>
+        <div class="order-position">
+          <svg width="18px" height="24px" class="order-form-icon">
+            <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+          </svg>
+          <input
+            id="user-email"
+            name="user-email"
+            class="order-input"
+            required
+          />
+        </div>
+        <label for="comment" class="form-label">Comment</label>
+        <div class="order-position">
+          <textarea
+            id="comment"
+            name="comment"
+            placeholder="Text input"
+            style="resize: none"
+            spellcheck="true"
+            class="comment-textarea"
+          ></textarea>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
