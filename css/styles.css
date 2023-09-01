@@ -713,11 +713,11 @@ body {
   display: flex;
   gap: 8px;
   align-items: center;
+  cursor: pointer;
 }
 
 .checkbox-icon {
   fill: var(--white);
-  overflow: hidden;
   border-radius: 2px;
   width: 16px;
   height: 16px;
@@ -725,10 +725,8 @@ body {
   transition: background-color var(--transition);
 }
 
-.modal-checkbox :checked + .checkbox-label > .modal-check-icon {
+.modal-checkbox:checked + .checkbox-label > .modal-check-icon {
   background-color: var(--ocean);
-
-  transition: var(--transition);
 }
 
 .modal-check-icon {
