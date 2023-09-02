@@ -634,7 +634,7 @@ body {
   width: 24px;
   height: 24px;
   background-color: var(--cornflower);
-
+  border: none;
   border-radius: 50%;
   cursor: pointer;
   border: none;
