@@ -645,9 +645,10 @@ body {
   cursor: pointer;
 }
 .is-hidden {
-  visibility: hidden;
+  /* visibility: hidden; */
   pointer-events: none;
   position: absolute;
+  opacity: 0;
 }
 .order-form-name {
   text-align: center;
@@ -725,14 +726,15 @@ body {
   width: 16px;
   height: 16px;
   border: 1px solid var(--navyblue-modal);
-  transition: background-color var(--transition);
 }
 
-.modal-checkbox:checked + .checkbox-label > .modal-check-icon {
+.modal-checkbox:checked + .checkbox-label > .checkbox-icon {
   fill: var(--ocean);
+  fill-opacity: 1;
   background-color: var(--ocean);
   border: none;
   border-radius: 2px;
+  transition: background-color var(--transition);
 }
 
 .modal-check-icon {
