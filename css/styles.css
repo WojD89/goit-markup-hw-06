@@ -659,7 +659,6 @@ body {
   padding-left: 24px;
 }
 .order-input {
-  /* position: relative; */
   width: 360px;
   height: 40px;
   border-radius: 4px;
@@ -671,7 +670,6 @@ body {
 .order-position {
   position: relative;
   padding: 0px 24px 8px 24px;
-  /* inset: auto 0 8px 16px; */
 }
 .order-position:focus-within {
   fill: var(--iris);
@@ -726,7 +724,7 @@ body {
 }
 
 .modal-checkbox:checked + .checkbox-label > .modal-check-icon {
-  background-color: var(--ocean);
+  stroke: var(--ocean);
 }
 
 .modal-check-icon {
