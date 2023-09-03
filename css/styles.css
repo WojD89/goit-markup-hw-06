@@ -654,7 +654,7 @@ body {
   font-weight: 500;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.32px;
-  padding: 62px 24px 0px 24px;
+  padding: 62px 24px 16px 24px;
 }
 .form-label {
   font-size: 12px;
