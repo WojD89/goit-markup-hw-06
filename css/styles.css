@@ -626,18 +626,23 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-
+.centerx {
+  width: 8px;
+  height: 8px;
+  margin: auto;
+}
 .close-btn {
+  display: flex;
+  align-items: center;
   position: absolute;
   top: 24px;
   right: 24px;
   width: 24px;
   height: 24px;
   background-color: var(--cornflower);
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  border: none;
 }
 .is-hidden {
   visibility: hidden;
@@ -724,7 +729,10 @@ body {
 }
 
 .modal-checkbox:checked + .checkbox-label > .modal-check-icon {
-  stroke: var(--ocean);
+  fill: var(--ocean);
+  background-color: var(--ocean);
+  border: none;
+  border-radius: 2px;
 }
 
 .modal-check-icon {
